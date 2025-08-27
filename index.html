@@ -1,13 +1,32 @@
 ---
+---
 layout: splash
+title: 郗希 - 中国农业大学
 author_profile: true
 header:
-  overlay_image: /assets/images/hearder.jpg
+  overlay_image: /assets/images/header.jpg   # ← 确保真有这个文件（不是 hearder）
+  overlay_filter: 0.25
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "理论经济学与资源环境经济学 · 中国哲学与思政 · 传统文化教育"
+
+feature_row:
+  - title: "个人简介"
+    excerpt: "教育与工作经历、研究兴趣、联系方式"
+    url: "/about/"
+    btn_label: "查看简介"
+    btn_class: "btn--primary"
+  - title: "发表论文"
+    excerpt: "期刊、会议、书章节"
+    url: "/publications/"
+    btn_label: "查看论文"
+    btn_class: "btn--primary"
+  - title: "教学"
+    excerpt: "课程信息与讲义"
+    url: "/teaching/"
+    btn_label: "进入教学页"
+    btn_class: "btn--primary"
 ---
 
-<h3 class="archive__subtitle">最新动态</h3>
+{% include feature_row %}
 
-{% for post in site.posts limit: 5 %}
-  {% include archive-single.html %}
-{% endfor %}
+
