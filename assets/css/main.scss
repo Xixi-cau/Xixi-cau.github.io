@@ -4,6 +4,6 @@ search: false
 ---
 
 @charset "utf-8";
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes/skins/air";  // 皮肤
+@import "minimal-mistakes";            // 主题主体
 @import "minimal-mistakes"; // main partials
