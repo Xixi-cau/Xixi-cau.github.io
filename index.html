@@ -4,78 +4,46 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>郗希 · 学术主页</title>
-  <meta name="description" content="郗希 · 学术主页 · 研究方向：理论经济学与资源环境经济学；中国哲学与马克思主义中国化；中华优秀传统文化教育与思政课教育。">
+  <meta name="description" content="郗希 · 学术主页 · 理论经济学与资源环境经济学；中国哲学与马克思主义中国化；传统文化教育与思政课教育。">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>📘</text></svg>">
   <style>
     :root{
-      --bg:#f5f9ff;
-      --bg-soft:#e8f2ff;
-      --primary:#2a6fdb;
-      --primary-600:#1e5fcb;
-      --accent:#5aa0ff;
-      --ink:#0f172a;
-      --muted:#4b5563;
-      --card:#ffffff;
-      --ring: rgba(42,111,219,.25);
+      --bg:#f5f9ff; --bg-soft:#eaf2ff;
+      --primary:#2a6fdb; --primary-600:#1e5fcb;
+      --ink:#0f172a; --muted:#4b5563;
+      --card:#ffffff; --radius:16px;
       --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(29,78,216,.08);
-      --radius: 18px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif, -apple-system, "SF Pro Text", "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;line-height:1.65}
+    body{margin:0;background:var(--bg);color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",Helvetica,Arial,sans-serif}
     a{color:var(--primary);text-decoration:none}
     a:hover{color:var(--primary-600);text-decoration:underline}
-    .container{max-width:1050px;margin:0 auto;padding:24px}
+    .container{max-width:960px;margin:0 auto;padding:24px}
     .hero{
-      background: radial-gradient(1200px 400px at 50% -10%, var(--bg-soft), transparent), linear-gradient(180deg, #eef6ff 0%, #f7fbff 100%);
-      padding: 56px 0 28px;
-      border-bottom: 1px solid #eaf1ff;
+      background: radial-gradient(1200px 400px at 50% -10%, var(--bg-soft), transparent),
+                  linear-gradient(180deg, #eef6ff 0%, #f7fbff 100%);
+      padding: 48px 0 28px; border-bottom:1px solid #eaf1ff;
     }
-    .card{
-      background:var(--card);
-      border:1px solid #e9eefc;
-      border-radius:var(--radius);
-      box-shadow: var(--shadow);
-    }
-    .profile{
-      display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px
-    }
-    .avatar{
-      width:128px;height:128px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 4px 18px rgba(42,111,219,.25)
-    }
-    h1{margin:0;font-size:40px;letter-spacing:.5px}
-    .subtitle{color:var(--muted);margin-top:-2px}
-    .badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:8px}
-    .pill{
-      display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;
-      background:#fff;border:1px solid #e6eeff;box-shadow:0 1px 2px rgba(42,111,219,.05);
-      font-weight:600
-    }
-    .pill:hover{background:#f8fbff;border-color:#d9e6ff;text-decoration:none}
-    .cta{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:10px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;border:1px solid transparent;
-      font-weight:700;box-shadow:var(--shadow)
-    }
-    .btn.primary{background:var(--primary);color:#fff}
-    .btn.primary:hover{background:var(--primary-600)}
-    .btn.ghost{background:#fff;border-color:#e6eeff}
-    .btn.ghost:hover{background:#f8fbff}
-    .grid{display:grid;grid-template-columns:1fr;gap:20px}
-    @media (min-width:960px){.grid{grid-template-columns:1fr 1fr}}
-    section{scroll-margin-top:100px}
-    .section-title{font-size:22px;margin:0 0 8px}
-    .section{padding:22px}
-    .list{margin:0;padding-left:18px}
-    .pubs ol{padding-left:20px;margin:10px 0 0}
-    .pub{margin:8px 0}
-    .pub i{font-style:italic}
+    .card{background:var(--card);border:1px solid #e9eefc;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .profile{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px}
+    .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 4px 18px rgba(42,111,219,.25)}
+    h1{margin:0;font-size:34px}
+    .subtitle{color:var(--muted);margin-top:-4px}
+    .pills{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:6px}
+    .pill{padding:8px 12px;border-radius:999px;background:#fff;border:1px solid #e6eeff;font-weight:600}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+    .btn{padding:11px 16px;border-radius:12px;border:1px solid transparent;font-weight:700;box-shadow:var(--shadow)}
+    .btn.primary{background:var(--primary);color:#fff}.btn.primary:hover{background:var(--primary-600)}
+    .btn.ghost{background:#fff;border-color:#e6eeff}.btn.ghost:hover{background:#f8fbff}
+    main{padding:22px 0 60px}
+    section.section{max-width:820px;margin:18px auto;padding:20px}
+    .section h2{margin:0 0 8px;font-size:22px}
+    .list{margin:8px 0 0 18px}
+    .pubs ol{padding-left:22px;margin:8px 0 0}
+    .pub{margin:8px 0}.pub i{font-style:italic}
     .tag{display:inline-block;background:#eef5ff;border:1px solid #dce9ff;color:#2a5fb3;border-radius:999px;padding:2px 8px;font-size:12px;margin-left:6px}
-    .footer{color:#6b7280;text-align:center;padding:36px 18px}
-    .anchor{
-      position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:30
-    }
-    .anchor a{background:#fff;border:1px solid #e5edff;border-radius:10px;padding:10px 12px;box-shadow:var(--shadow)}
-    .kbd{font:600 12px/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;background:#eef2ff;border:1px solid #dbe4ff;border-bottom-width:3px;border-radius:6px;padding:2px 6px;margin-left:6px}
+    footer{color:#6b7280;text-align:center;padding:30px 18px;border-top:1px solid #eaf1ff}
   </style>
 </head>
 <body>
@@ -84,13 +52,14 @@
   <header class="hero">
     <div class="container">
       <div class="profile">
-        <img class="avatar" src="/assets/images/myphoto.jpg" alt="郗希的照片">
+        <img class="avatar" src="/assets/images/myphoto.jpg" alt="郗希照片">
         <h1>郗希</h1>
         <div class="subtitle">中国农业大学 · 讲师</div>
-        <div class="badges">
+        <div class="pills">
           <a class="pill" href="#about">个人简介</a>
-          <a class="pill" href="#pubs">发表论文</a>
+          <a class="pill" href="#interests">研究兴趣</a>
           <a class="pill" href="#teaching">教学</a>
+          <a class="pill" href="#pubs">发表论文</a>
           <a class="pill" href="#contact">联系</a>
         </div>
         <div class="cta">
@@ -102,140 +71,189 @@
     </div>
   </header>
 
-  <!-- 主体 -->
-  <main class="container" style="margin-top:14px">
-    <div class="grid">
-      <!-- 左：简介 -->
-      <section id="about" class="card section">
-        <h2 class="section-title">个人简介</h2>
-        <p>研究背景较为交叉，主要聚焦三方向：<b>理论经济学与资源环境经济学、生态公益林与低碳经济</b>；<b>中国哲学与马克思主义中国化、人类命运共同体</b>；<b>中华优秀传统文化教育与思政课教育</b>。</p>
+  <main class="container">
 
-        <h3>教育经历</h3>
-        <ul class="list">
-          <li><b>博士</b> · 清华大学 · 理论经济学</li>
-          <li><b>硕士</b> · 西安财经学院 · 产业经济学</li>
-          <li><b>本科</b> · 复旦大学 · 应用数学</li>
-        </ul>
+    <!-- 1. 个人简介 -->
+    <section id="about" class="card section">
+      <h2>个人简介</h2>
+      <p>研究背景较为交叉，主要聚焦三方向：<b>理论经济学与资源环境经济学、生态公益林与低碳经济</b>；<b>中国哲学与马克思主义中国化、人类命运共同体</b>；<b>中华优秀传统文化教育与思政课教育</b>。</p>
 
-        <h3>工作经历</h3>
-        <ul class="list">
-          <li>2016–2019 · 北京大学（博士后）</li>
-          <li>现任 · 中国农业大学 讲师</li>
-        </ul>
+      <h3>教育经历</h3>
+      <ul class="list">
+        <li><b>博士</b> · 清华大学 · 理论经济学</li>
+        <li><b>硕士</b> · 西安财经学院 · 产业经济学</li>
+        <li><b>本科</b> · 复旦大学 · 应用数学</li>
+      </ul>
 
-        <h3>研究/学术主页</h3>
-        <ul class="list">
-          <li>ORCID：<a href="https://orcid.org/0000-0002-0099-4514" target="_blank" rel="noopener">0000-0002-0099-4514</a></li>
-        </ul>
-      </section>
+      <h3>工作经历</h3>
+      <ul class="list">
+        <li>2016–2019 · 北京大学（博士后）</li>
+        <li>现任 · 中国农业大学 讲师</li>
+      </ul>
+    </section>
 
-      <!-- 右：教学 -->
-      <section id="teaching" class="card section">
-        <h2 class="section-title">教学</h2>
-        <ul class="list">
-          <li>自然辩证法（研究生）</li>
-        </ul>
->
-      </section>
-    </div>
+    <!-- 2. 研究兴趣 -->
+    <section id="interests" class="card section">
+      <h2>研究兴趣</h2>
+      <ul class="list">
+        <li>宏观经济学与增长理论、资源环境与绿色低碳</li>
+        <li>生态公益林治理、碳汇与排放交易机制设计</li>
+        <li>中国哲学与马克思主义中国化、人类命运共同体</li>
+        <li>中华优秀传统文化教育与思政课教学方法</li>
+      </ul>
+    </section>
 
-    <!-- 论文 -->
-    <section id="pubs" class="card section pubs" style="margin-top:20px">
-      <h2 class="section-title">发表论文（按时间）</h2>
+    <!-- 3. 教学（纵向卡片，收敛宽度） -->
+    <section id="teaching" class="card section">
+      <h2>教学</h2>
+      <ul class="list">
+        <li>自然辩证法（研究生）</li>
+        <!-- 如有更多课程，按同样格式追加 -->
+      </ul>
+    </section>
+
+    <!-- 4. 发表论文 -->
+    <section id="pubs" class="card section pubs">
+      <h2>发表论文（按时间）</h2>
       <ol>
+        <!-- Animals（今年）——请把题目与 DOI 替换到下面占位 -->
         <li class="pub">
-          Ke Zheng, Runze Yuan, Hao Zhang, <b>Xi Xi</b>. <i>The Dynamics of Prices Under Nominal Interest Rate Policy: Stability of Interest Rate Instruments and Price Effects Under Four Typical Policies</i>. ICBBEM 2022, Atlantis Press. DOI: <a href="https://doi.org/10.2991/978-94-6463-030-5_38">10.2991/978-94-6463-030-5_38</a>.
+         Xinyi Wang , Yihui Xu , <b>Xi Xi</b>. <i>[Spatiotemporal Risk Assessment of H5 Avian Influenza in China:
+An Interpretable Machine Learning Approach to Uncover
+Multi-Scale Drivers]</i>. <b>Animals</b>, 2025. DOI: <a href="#">[ a href="https://doi.org/10.3390/ani15162447"]</a>.
+          <span class="tag">SCI</span>
+        </li>
+
+        <li class="pub">
+          Ke Zheng, Runze Yuan, Hao Zhang, <b>Xi Xi</b>. <i>The Dynamics of Prices Under Nominal Interest Rate Policy: Stability of Interest Rate Instruments and Price Effects Under Four Typical Policies</i>. ICBBEM 2022, Atlantis Press. DOI:
+          <a href="https://doi.org/10.2991/978-94-6463-030-5_38">10.2991/978-94-6463-030-5_38</a>.
           <span class="tag">会议论文</span>
         </li>
+
         <li class="pub">
-          Runze Yuan, <b>Xi Xi</b>, Zhentao Liu. <i>Random “Decision and Experienced Utility”, Adaptive “Consumer Memory and Choice”</i>. <b>Mathematics</b>, 2023. DOI: <a href="https://doi.org/10.3390/math11061470">10.3390/math11061470</a>.
+          Runze Yuan, <b>Xi Xi</b>, Zhentao Liu.
+          <i>Random “Decision and Experienced Utility”, Adaptive “Consumer Memory and Choice”</i>.
+          <b>Mathematics</b>, 2023. DOI:
+          <a href="https://doi.org/10.3390/math11061470">10.3390/math11061470</a>.
+        </li>
+
+        <li class="pub">
+          Runze Yuan, <b>Xi Xi</b>, Yifan Zhang, Zhentao Liu, Chao Li, Yu Liang.
+          <i>Optimal Growths from Two Perspectives, with Conditional Macro- and Micro-consistency</i>.
+          <b>Journal of the Knowledge Economy</b>, 2024. DOI:
+          <a href="https://doi.org/10.1007/s13132-023-01412-8">10.1007/s13132-023-01412-8</a>.
+        </li>
+
+        <li class="pub">
+          <b>Xi Xi</b>, Yuanyuan Gong, Runze Yuan.
+          <i>The Dilemma of Factor Allocation and Wage Difference under the Constant Region-Wide Returns to Scale</i>.
+          <b>Discrete Dynamics in Nature and Society</b>, 2021. DOI:
+          <a href="https://doi.org/10.1155/2021/4283170">10.1155/2021/4283170</a>.
+        </li>
+
+        <li class="pub">
+          Ke Zheng, Hao Zhang, Runze Yuan, <b>Xi Xi</b>.
+          <i>Modeling the Dynamics of Interest Rate Policy...</i>.
+          CIBDA 2022（International Conference on Computer Information and Big Data Applications）.
+        </li>
+
+        <li class="pub">
+          Yifan Qian, <b>Xi Xi</b>.
+          <i>Evaluating the Policy Effect of the “Broadband China” Strategy — From the Perspective of Urban Entrepreneurship Vitality</i>.
+          <b>Journal of the Knowledge Economy</b>, 2024. DOI:
+          <a href="https://doi.org/10.1007/s13132-024-02294-0">10.1007/s13132-024-02294-0</a>.
+        </li>
+
+        <li class="pub">
+          Yiming Qian, Runze Yuan, <b>Xi Xi</b>.
+          <i>Where does “Mining” go from here in smart cities? Value endogenous and civilizational incentives for blockchain currencies</i>.
+          <b>Advances in Urban Engineering and Management Science, Vol.2</b>（CRC Press, 2022）. DOI:
+          <a href="https://doi.org/10.1201/9781003345329-1">10.1201/9781003345329-1</a>.
+          <span class="tag">书章</span>
+        </li>
+
+        <li class="pub">
+          Yiming Qian, Yankun Yi, <b>Xi Xi</b>.
+          <i>New Trend of Materialized Technology and Elite Human Capital — Endogenous Growth Model Improvement and Computer Implementation Framework</i>.
+          <b>Internet Finance and Digital Economy: ICIFDE 2022</b>（World Scientific, 2023）. DOI:
+          <a href="https://doi.org/10.1142/9789811267505_0068">10.1142/9789811267505_0068</a>.
+        </li>
+
+        <li class="pub">
+          Yiming Qian, <b>Xi Xi</b>.
+          <i>Application Analysis of Block Chain Technology in Supply Chain Finance</i>.
+          <b>ICIFDE 2022</b>（World Scientific, 2023）. DOI:
+          <a href="https://doi.org/10.1142/9789811267505_0047">10.1142/9789811267505_0047</a>.
+        </li>
+
+        <li class="pub">
+          Yiming Qian, Chao Lei, Hanran Ma, <b>Xi Xi</b>.
+          <i>Analysis and Application of Regional Industrial Economic Information Under the Background of Big Data</i>.
+          <b>ICIFDE 2022</b>（World Scientific, 2023）. DOI:
+          <a href="https://doi.org/10.1142/9789811267505_0067">10.1142/9789811267505_0067</a>.
+        </li>
+
+        <li class="pub">
+          Yiming Qian, Hao Zhang, Jiahao Liu, Hanran Ma, Xinyu Li, <b>Xi Xi</b>.
+          <i>Advances on External Machine Computing Power Focusing on Internal Personal Value: A Case Study on the New Digital Currency</i>.
+          <b>Mathematics</b>, 2023. DOI:
+          <a href="https://doi.org/10.3390/math11112425">10.3390/math11112425</a>.
+        </li>
+
+        <li class="pub">
+          Runze Yuan, Yiming Qian, <b>Xi Xi</b>.
+          <i>The best candidate for the best job — Big data quantitative dual selection model for recruitment and job search</i>.
+          <b>Advances in Urban Engineering and Management Science, Vol.2</b>（CRC Press, 2022）. DOI:
+          <a href="https://doi.org/10.1201/9781003345329-3">10.1201/9781003345329-3</a>.
+          <span class="tag">书章</span>
+        </li>
+
+        <li class="pub">
+          郗希，李超. <i>新型森林碳汇二氧化碳排放权交易机制的设计</i>. <b>经济研究参考</b>，2018(19):27–37.
         </li>
         <li class="pub">
-          Runze Yuan, <b>Xi Xi</b>, Yifan Zhang, Zhentao Liu, Chao Li, Yu Liang. <i>Optimal Growths from Two Perspectives, with Conditional Macro- and Micro-consistency</i>. <b>Journal of the Knowledge Economy</b>, 2024. DOI: <a href="https://doi.org/10.1007/s13132-023-01412-8">10.1007/s13132-023-01412-8</a>.
+          郗希，王水涣. <i>弘扬“致良知”学说需补偏救弊</i>. <b>人民论坛</b>，2018(13):140–141.
         </li>
         <li class="pub">
-          <b>Xi Xi</b>, Yuanyuan Gong, Runze Yuan. <i>The Dilemma of Factor Allocation and Wage Difference under the Constant Region-Wide Returns to Scale</i>. <b>Discrete Dynamics in Nature and Society</b>, 2021. DOI: <a href="https://doi.org/10.1155/2021/4283170">10.1155/2021/4283170</a>.
+          郗希，刘高升. <i>中华优秀传统文化复兴教育的几个关键问题</i>. <b>人民论坛·学术前沿</b>，2018(8):114–117.
         </li>
         <li class="pub">
-          Ke Zheng, Hao Zhang, Runze Yuan, <b>Xi Xi</b>. <i>Modeling the Dynamics of Interest Rate Policy: the Dynamic Impact of the Chosen Path of the Nominal Interest Rate on the Real Interest Rate</i>. CIBDA 2022（International Conference on Computer Information and Big Data Applications）. <a href="https://www.proceedings.com/content/065/065065webtoc.pdf">会议论文目录链接</a>.
-        </li>
-        <li class="pub">
-          Yifan Qian, <b>Xi Xi</b>. <i>Evaluating the Policy Effect of the “Broadband China” Strategy — From the Perspective of Urban Entrepreneurship Vitality</i>. <b>Journal of the Knowledge Economy</b>, 2024. DOI: <a href="https://doi.org/10.1007/s13132-024-02294-0">10.1007/s13132-024-02294-0</a>.
-        </li>
-        <li class="pub">
-          Yiming Qian, Runze Yuan, <b>Xi Xi</b>. <i>Where does “Mining” go from here in smart cities? Value endogenous and civilizational incentives for blockchain currencies</i>. 见 <b>Advances in Urban Engineering and Management Science, Vol.2</b>（CRC Press, 2022）. DOI: <a href="https://doi.org/10.1201/9781003345329-1">10.1201/9781003345329-1</a>.
-          <span class="tag">书籍章节</span>
-        </li>
-        <li class="pub">
-          Yiming Qian, Yankun Yi, <b>Xi Xi</b>. <i>New Trend of Materialized Technology and Elite Human Capital — Endogenous Growth Model Improvement and Computer Implementation Framework</i>. 见 <b>Internet Finance and Digital Economy: ICIFDE 2022</b>（World Scientific, 2023）. DOI: <a href="https://doi.org/10.1142/9789811267505_0068">10.1142/9789811267505_0068</a>.
-          <span class="tag">会议论文 · 书章</span>
-        </li>
-        <li class="pub">
-          Yiming Qian, <b>Xi Xi</b>. <i>Application Analysis of Block Chain Technology in Supply Chain Finance</i>. 见 <b>ICIFDE 2022</b>（World Scientific, 2023）. DOI: <a href="https://doi.org/10.1142/9789811267505_0047">10.1142/9789811267505_0047</a>.
-        </li>
-        <li class="pub">
-          Yiming Qian, Chao Lei, Hanran Ma, <b>Xi Xi</b>. <i>Analysis and Application of Regional Industrial Economic Information Under the Background of Big Data</i>. 见 <b>ICIFDE 2022</b>（World Scientific, 2023）. DOI: <a href="https://doi.org/10.1142/9789811267505_0067">10.1142/9789811267505_0067</a>.
-        </li>
-        <li class="pub">
-          Yiming Qian, Hao Zhang, Jiahao Liu, Hanran Ma, Xinyu Li, <b>Xi Xi</b>. <i>Advances on External Machine Computing Power Focusing on Internal Personal Value: A Case Study on the New Digital Currency</i>. <b>Mathematics</b>, 2023. DOI: <a href="https://doi.org/10.3390/math11112425">10.3390/math11112425</a>.
-        </li>
-        <li class="pub">
-          Runze Yuan, Yiming Qian, <b>Xi Xi</b>. <i>The best candidate for the best job — Big data quantitative dual selection model for recruitment and job search</i>. 见 <b>Advances in Urban Engineering and Management Science, Vol.2</b>（CRC Press, 2022）. DOI: <a href="https://doi.org/10.1201/9781003345329-3">10.1201/9781003345329-3</a>. <span class="tag">书籍章节</span>
-        </li>
-        <li class="pub">
-          郗希，李超. <i>新型森林碳汇二氧化碳排放权交易机制的设计</i>. <b>经济研究参考</b>，2018(19):27–37. 参考链接：<a href="https://j.bjfu.edu.cn/article/doi/10.12171/j.1000-1522.20220257">文献引用条目</a>.
-        </li>
-        <li class="pub">
-          郗希，王水涣. <i>弘扬“致良知”学说需补偏救弊</i>. <b>人民论坛</b>，2018(13):140–141. 全文：<a href="https://paper.people.com.cn/rmlt/html/2018-05/01/content_1975850.htm">人民网</a>.
-        </li>
-        <li class="pub">
-          郗希，刘高升. <i>中华优秀传统文化复兴教育的几个关键问题</i>. <b>人民论坛·学术前沿</b>，2018(8):114–117. 参考：<a href="https://ir.pku.edu.cn/handle/20.500.11897/527346">北大机构库条目</a>.
-        </li>
-        <li class="pub">
-          郗希，乔元波，武康平. <i>可持续发展视角下的城镇化与都市化抉择——基于国际生态足迹面板数据实证研究</i>. <b>中国人口·资源与环境</b>，2015, 25(2):47–56. 条目：<a href="https://d.wanfangdata.com.cn/periodical/zgrkzyyhj201502007">万方</a>.
+          郗希，乔元波，武康平. <i>可持续发展视角下的城镇化与都市化抉择——基于国际生态足迹面板数据实证研究</i>. <b>中国人口·资源与环境</b>，2015, 25(2):47–56.
         </li>
         <li class="pub">
           郗希. <i>性别差异视角下的金融危机理论研究动态</i>. <b>经济学动态</b>，2015(4):121–129.
         </li>
         <li class="pub">
-          郗希，李超，王克西. <i>生态环境对中国经济增长的影响及绿色GDP测算</i>. <b>生态经济</b>，2010(12):60–64. 条目：<a href="https://sns.wanfangdata.com.cn/sns/perio/stjj/?isSync=0&issueNum=12&page=2&publishYear=2010&tabId=article">万方</a>.
+          郗希，李超，王克西. <i>生态环境对中国经济增长的影响及绿色GDP测算</i>. <b>生态经济</b>，2010(12):60–64.
         </li>
         <li class="pub">
-          郗希，李超，王克西. <i>集体林权改革后生态公益林的监管与补偿机制探讨</i>. <b>西安邮电大学学报</b>，2009, 14(6):126–132. 条目：<a href="https://m.qikan.cqvip.com/Article/ArticleDetail?from=Article_ArticleDetail&id=1002813891">维普</a>.
+          郗希，李超，王克西. <i>集体林权改革后生态公益林的监管与补偿机制探讨</i>. <b>西安邮电大学学报</b>，2009, 14(6):126–132.
         </li>
       </ol>
     </section>
 
-    <!-- 联系方式 -->
-    <section id="contact" class="card section" style="margin-top:20px">
-      <h2 class="section-title">联系</h2>
+    <!-- 5. 联系方式 -->
+    <section id="contact" class="card section">
+      <h2>联系</h2>
       <ul class="list">
         <li>邮箱：<a href="mailto:xixi@cau.edu.cn">xixi@cau.edu.cn</a></li>
         <li>GitHub：<a href="https://github.com/Xixi-cau" target="_blank" rel="noopener">Xixi-cau</a></li>
+        <li>ORCID：<a href="https://orcid.org/0000-0002-0099-4514" target="_blank" rel="noopener">0000-0002-0099-4514</a></li>
       </ul>
-      <p style="color:var(--muted)">如需新增「课程/讲义/项目/新闻」等分栏，只要在此文件中复制现成区块并修改即可。</p>
     </section>
+
   </main>
 
-  <div class="anchor" aria-hidden="true">
-    <a href="#about" title="回到简介">⬆️</a>
-  </div>
-
-  <footer class="footer">
-    <div class="container">
-      © <span id="y"></span> 郗希 ｜ 最后更新：<span id="d"></span>
+  <footer>
+    <div class="container" style="text-align:center;color:#6b7280">
+      © <span id="y"></span> 郗希 · 最后更新：<span id="d"></span>
     </div>
   </footer>
 
   <script>
-    const d=new Date(); 
+    const d=new Date();
     document.getElementById('y').textContent=d.getFullYear();
     document.getElementById('d').textContent=d.toISOString().slice(0,10);
   </script>
-  <!-- 说明：
-    1) 头像路径：/assets/images/myphoto.jpg
-    2) 简历路径：/assets/CV_XiXi.pdf （可不放；按钮仍会显示）
-    3) 若仍想使用 Jekyll，请保留本 index.html；不需要 front matter（---）！
-  -->
 </body>
 </html>
