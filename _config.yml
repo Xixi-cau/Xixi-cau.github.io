@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Author
-author:
+# Site Author
   name           : "郗希"
   avatar         : "/assets/images/xixi-avatar.jpg"
   bio            : "研究背景较为交叉，主要焦聚三方向：理论经济学与资源环境经济学，生态公益林与低碳经济；中国哲学与马克思主义中国化，人类命运共同体；中华优秀传统文化教育与思政课教育。"
@@ -28,8 +28,6 @@ author:
     - label: "所在院校"
       icon: "fas fa-fw fa-building"
       url: "http://www.cau.edu.cn/"
-words_per_minute         : 200
-
 # SEO Related
 google_site_verification :
 bing_site_verification   :
