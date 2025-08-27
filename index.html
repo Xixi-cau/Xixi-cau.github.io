@@ -1,32 +1,115 @@
----
----
-layout: splash
-title: 郗希 - 中国农业大学
-author_profile: true
-header:
-  overlay_image: /assets/images/header.jpg
-  overlay_filter: 0.25
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "理论经济学与资源环境经济学 · 中国哲学与思政 · 传统文化教育"
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>郗希 - 中国农业大学</title>
+  <meta name="description" content="郗希 · 中国农业大学 · 学术主页" />
+  <link rel="icon" href="data:,">
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#111; --muted:#666; --primary:#0f62fe; --card:#f6f8fa; --link:#0f62fe;
+      --maxw:980px; --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;color:var(--fg);background:var(--bg)}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 18px}
+    .hero{
+      color:#fff; text-align:center; padding:64px 0 48px;
+      background:#222 center/cover no-repeat;
+      background-image:url("/assets/images/header.jpg");
+    }
+    .hero .avatar{
+      width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.9);box-shadow:0 6px 18px rgba(0,0,0,.25)
+    }
+    .title{margin:14px 0 6px;font-size:28px;font-weight:700}
+    .subtitle{margin:0;color:#eef;opacity:.95}
+    .nav{margin:18px 0 8px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .nav a{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.12);backdrop-filter:saturate(120%) blur(2px);color:#fff}
+    .btns{margin-top:8px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:#fff;color:#111;border:1px solid #e5e7eb}
+    .btn.alt{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+    main{padding:36px 0 60px}
+    section{margin:28px 0;background:var(--card);border:1px solid #e5e7eb;border-radius:var(--radius);padding:22px}
+    h2{margin:0 0 14px;font-size:22px}
+    ol,ul{margin:8px 0 0 22px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+    footer{border-top:1px solid #e5e7eb;padding:18px 0;color:var(--muted);text-align:center}
+    /* 若没有头图，也想好看：退化为渐变背景 */
+    .hero{background-image:linear-gradient(135deg,#2b6cb0 0%,#234e96 100%),var(--bg)}
+  </style>
+</head>
+<body>
 
-feature_row:
-  - title: "个人简介"
-    excerpt: "教育与工作经历、研究兴趣、联系方式"
-    url: "/about/"
-    btn_label: "查看简介"
-    btn_class: "btn--primary"
-  - title: "发表论文"
-    excerpt: "期刊、会议、书章节"
-    url: "/publications/"
-    btn_label: "查看论文"
-    btn_class: "btn--primary"
-  - title: "教学"
-    excerpt: "课程信息与讲义"
-    url: "/teaching/"
-    btn_label: "进入教学页"
-    btn_class: "btn--primary"
----
+<header class="hero">
+  <div class="container">
+    <img class="avatar" src="/assets/images/myphoto.jpg" alt="郗希头像" />
+    <h1 class="title">郗希</h1>
+    <p class="subtitle">中国农业大学 · 讲师</p>
 
-{% include feature_row %}
+    <nav class="nav">
+      <a href="#about">个人简介</a>
+      <a href="#publications">发表论文</a>
+      <a href="#teaching">教学</a>
+      <a href="#contact">联系</a>
+    </nav>
 
+    <div class="btns">
+      <a class="btn" href="/assets/CV.pdf">下载 CV</a>
+      <a class="btn alt" href="mailto:xixi@cau.edu.cn">联系我</a>
+      <a class="btn alt" href="https://github.com/Xixi-cau" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
 
+<main class="container">
+  <div class="grid">
+    <section id="about">
+      <h2>个人简介</h2>
+      <p>
+        研究背景较为交叉，主要聚焦三方向：理论经济学与资源环境经济学（生态公益林与低碳经济）；
+        中国哲学与马克思主义中国化（人类命运共同体）；中华优秀传统文化教育与思政课教育。
+      </p>
+      <ul>
+        <li><b>教育经历</b>：清华大学经管学院（博）、西安财经学院（硕）、复旦大学数学科学学院（学士）</li>
+        <li><b>工作经历</b>：北京大学教育学院（博士后）；现为中国农业大学讲师</li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>教学</h2>
+      <ul>
+        <li>（示例）政治经济学（本科）</li>
+        <li>（示例）资源环境经济学专题（研究生）</li>
+      </ul>
+      <p>课程大纲、讲义等资料可按需添加链接。</p>
+    </section>
+  </div>
+
+  <section id="publications">
+    <h2>发表论文（节选）</h2>
+    <ol>
+      <li><b>Ke Zheng, Runze Yuan, Hao Zhang, Xi Xi</b>. The Dynamics of Prices Under Nominal Interest Rate Policy. <i>ICBMEM 2022, AHIS 5</i>. DOI: <a href="https://doi.org/10.2991/978-94-6463-030-5_38">10.2991/978-94-6463-030-5_38</a></li>
+      <li><b>Runze Yuan, Xi Xi, Zhentao Liu</b>. Random Decision and Experienced Utility... <i>Mathematics</i>. DOI: <a href="https://doi.org/10.3390/math11061470">10.3390/math11061470</a></li>
+      <li><b>Runze Yuan, Xi Xi, Yifan Zhang, ...</b> Optimal Growths from Two Perspectives... <i>Journal of the Knowledge Economy</i>. DOI: <a href="https://doi.org/10.1007/s13132-023-01412-8">10.1007/s13132-023-01412-8</a></li>
+      <!-- 按同样格式继续补充即可 -->
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2>联系</h2>
+    <p>
+      邮箱：<a href="mailto:xixi@cau.edu.cn">xixi@cau.edu.cn</a><br/>
+      GitHub：<a href="https://github.com/Xixi-cau">Xixi-cau</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  © <span id="y"></span> 郗希 · 中国农业大学
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
