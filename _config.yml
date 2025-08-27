@@ -6,13 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -26,18 +20,17 @@ words_per_minute         : 200
 
 # Site Author
 author:
-  name             : "郗希"
-  avatar           : "/assets/images/xixi-avatar.jpg"
-  bio              : "研究背景较为交叉，主要焦聚三方向：理论经济学与资源环境经济学，生态公益林与低碳经济；中国哲学与马克思主义中国化，人类命运共同体；中华优秀传统文化教育与思政课教育。"
-  location         : "中国农业大学"
+  [cite_start]name             : "郗希" [cite: 3]
+  avatar           : "/assets/images/myphoto.jpg"
+  [cite_start]bio              : "研究背景较为交叉，主要焦聚三方向：理论经济学与资源环境经济学，生态公益林与低碳经济；中国哲学与马克思主义中国化，人类命运共同体；中华优秀传统文化教育与思政课教育。" [cite: 3]
+  [cite_start]location         : "中国农业大学" [cite: 3]
   email            : "xixi@cau.edu.cn"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:xixi@cau.edu.cn"
-    - label: "所在院校"
-      icon: "fas fa-fw fa-building"
-      url: "http://www.cau.edu.cn/"
+    # 主题会自动从上面的 email 和 location 字段生成链接，所以这里不再重复
+    # 你可以在这里添加其他链接，比如 Google Scholar, ResearchGate 等
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Xixi-cau"
 
 # Reading Files
 include:
@@ -77,14 +70,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -97,17 +88,14 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed
 
-
 # Outputting
 permalink: /:categories/:title/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins
 plugins:
@@ -116,7 +104,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
 
 # Defaults
 defaults:
