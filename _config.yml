@@ -20,14 +20,14 @@ words_per_minute         : 200
 
 # Site Author
 author:
-  [cite_start]name             : "郗希" [cite: 3]
+  name             : "郗希"
   avatar           : "/assets/images/myphoto.jpg"
-  [cite_start]bio              : "研究背景较为交叉，主要焦聚三方向：理论经济学与资源环境经济学，生态公益林与低碳经济；中国哲学与马克思主义中国化，人类命运共同体；中华优秀传统文化教育与思政课教育。" [cite: 3]
-  [cite_start]location         : "中国农业大学" [cite: 3]
+  bio              : "研究背景较为交叉，主要焦聚三方向：理论经济学与资源环境经济学，生态公益林与低碳经济；中国哲学与马克思主义中国化，人类命运共同体；中华优秀传统文化教育与思政课教育。"
+  location         : "中国农业大学"
   email            : "xixi@cau.edu.cn"
   links:
-    # 主题会自动从上面的 email 和 location 字段生成链接，所以这里不再重复
-    # 你可以在这里添加其他链接，比如 Google Scholar, ResearchGate 等
+    # The theme automatically generates email and location links, so we don't repeat them here.
+    # You can add other links below if needed.
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Xixi-cau"
