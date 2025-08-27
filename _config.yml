@@ -41,11 +41,34 @@ facebook:
 og_image                 : # Open Graph/Twitter default site image
 
 # Analytics
-analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
-
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+comments:
+#  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+#  disqus:
+#    shortname            :
+#  discourse:
+#    server               :
+#  facebook:
+#    appid                :
+#    num_posts            : # 5 (default)
+#    colorscheme          : # "light" (default), "dark"
+#  utterances:
+#    theme                : # "github-light" (default), "github-dark"
+#    issue_term           : # "pathname" (default)
+#  giscus:
+#    repo_id              :
+#    category_name        :
+#    category_id          :
+#    discussion_term      :
+#    reactions_enabled    :
+#    theme                :
+#    strict               :
+#    input_position       :
+#    emit_metadata        :
+#    lang                 :
+#    lazy                 :
+#  staticman:
+#    branch               :
+#    endpoint             :
 
 
 # Site Author
