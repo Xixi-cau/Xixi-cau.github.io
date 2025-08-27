@@ -14,14 +14,20 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Site Settings
-locale                   : "en-US"
-title                    : "郗希 - 中国农业大学"
-name                     : "郗希"
-description              : "中国农业大学讲师"
-url                      : "https://xixi-cau.github.io"
-baseurl                  : ""
-repository               : "Xixi-cau/Xixi-cau.github.io"
+# Site Author
+author:
+  name           : "郗希"
+  avatar         : "/assets/images/xixi-avatar.jpg"
+  bio            : "研究背景较为交叉，主要焦聚三方向：理论经济学与资源环境经济学，生态公益林与低碳经济；中国哲学与马克思主义中国化，人类命运共同体；中华优秀传统文化教育与思政课教育。"
+  location       : "中国农业大学"
+  email          : "xixi@cau.edu.cn"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:xixi@cau.edu.cn"
+    - label: "所在院校"
+      icon: "fas fa-fw fa-building"
+      url: "http://www.cau.edu.cn/"
 words_per_minute         : 200
 
 # SEO Related
