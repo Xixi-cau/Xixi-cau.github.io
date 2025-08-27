@@ -12,72 +12,24 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
- minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-# Site Author
-  name           : "郗希"
-  avatar         : "/assets/images/xixi-avatar.jpg"
-  bio            : "研究背景较为交叉，主要焦聚三方向：理论经济学与资源环境经济学，生态公益林与低碳经济；中国哲学与马克思主义中国化，人类命运共同体；中华优秀传统文化教育与思政课教育。"
-  location       : "中国农业大学"
-  email          : "xixi@cau.edu.cn"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:xixi@cau.edu.cn"
-    - label: "所在院校"
-      icon: "fas fa-fw fa-building"
-      url: "http://www.cau.edu.cn/"
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
+minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-
-# Analytics
-comments:
-#  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-#  disqus:
-#    shortname            :
-#  discourse:
-#    server               :
-#  facebook:
-#    appid                :
-#    num_posts            : # 5 (default)
-#    colorscheme          : # "light" (default), "dark"
-#  utterances:
-#    theme                : # "github-light" (default), "github-dark"
-#    issue_term           : # "pathname" (default)
-#  giscus:
-#    repo_id              :
-#    category_name        :
-#    category_id          :
-#    discussion_term      :
-#    reactions_enabled    :
-#    theme                :
-#    strict               :
-#    input_position       :
-#    emit_metadata        :
-#    lang                 :
-#    lazy                 :
-#  staticman:
-#    branch               :
-#    endpoint             :
-
+# Site Settings
+locale                   : "en-US"
+title                    : "郗希 - 中国农业大学"
+name                     : "郗希"
+description              : "中国农业大学讲师"
+url                      : "https://xixi-cau.github.io"
+baseurl                  : ""
+repository               : "Xixi-cau/Xixi-cau.github.io"
+words_per_minute         : 200
 
 # Site Author
+author:
   name             : "郗希"
   avatar           : "/assets/images/xixi-avatar.jpg"
-  [cite_start]bio              : "研究背景较为交叉，主要焦聚三方向：理论经济学与资源环境经济学，生态公益林与低碳经济；中国哲学与马克思主义中国化，人类命运共同体；中华优秀传统文化教育与思政课教育。" [cite: 3]
-  [cite_start]location         : "中国农业大学" [cite: 3]
+  bio              : "研究背景较为交叉，主要焦聚三方向：理论经济学与资源环境经济学，生态公益林与低碳经济；中国哲学与马克思主义中国化，人类命运共同体；中华优秀传统文化教育与思政课教育。"
+  location         : "中国农业大学"
   email            : "xixi@cau.edu.cn"
   links:
     - label: "Email"
@@ -125,12 +77,14 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+
 
 # Markdown Processing
 kramdown:
@@ -143,16 +97,17 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed
 
+
 # Outputting
 permalink: /:categories/:title/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+
 
 # Plugins
 plugins:
@@ -162,27 +117,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# Archives
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-# HTML Compression
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
 
 # Defaults
 defaults:
@@ -194,5 +128,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      comments: true
       share: true
       related: true
