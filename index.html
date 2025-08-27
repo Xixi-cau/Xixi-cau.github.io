@@ -1,4 +1,13 @@
 ---
-layout: home
+layout: splash
 author_profile: true
+header:
+  overlay_image: /assets/images/hearder.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
+
+<h3 class="archive__subtitle">最新动态</h3>
+
+{% for post in site.posts limit: 5 %}
+  {% include archive-single.html %}
+{% endfor %}
